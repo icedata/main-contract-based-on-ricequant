@@ -43,3 +43,9 @@ def init(context):
     context.CF = get_dominant_future('CF')
     context.JD = get_dominant_future('JD')
     context.P = get_dominant_future('P')
+ #获取数据
+    context.future = [context.IF,context.IH,context.IC,context.RB,context.HC,context.I,context.J,context.JM,context.ZC,context.FG,\n
+    context.V, context.PP,context.L,context.RU,context.BU,context.TA,context.MA,\n
+    context.JD,context.C,context.CS,context.A,context.M,context.Y,context.RM,context.OI,context.SR, context.CF,context.P,\n
+    context.CU,context.AL,context.ZN,context.NI,context.SN,context.PB,context.AU,context.AG]
+    subscribe(context.future)
